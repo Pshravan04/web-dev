@@ -201,6 +201,10 @@ Version      : 1.0
         padding: 0px 100px;
     }
 
+      .hero-image{
+          width: 80px;
+      }
+
     .hero-image img {
         margin-top: 0;
     }
