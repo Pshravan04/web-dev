@@ -441,6 +441,7 @@ Version      : 1.0
 
     .hero-image img {
         margin-top: 0;
+        width: 300px;
     }
 
     .hero-content .dot-shape {
