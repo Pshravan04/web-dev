@@ -92,7 +92,7 @@ Version: 1.1
   margin-left: 10px;
 }
 .theme-btn-2:hover {
-  color: var(--theme2);
+  color: var(--white);
 }
 
 /* --------------------------------------------
@@ -1468,7 +1468,7 @@ span {
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
-  color: #000;
+  color: var(--black);
   padding: 20px 0;
   text-align: left;
   position: relative;
@@ -1779,7 +1779,7 @@ span {
 }
 
 .offcanvas__logo a img {
-  width: 100px;
+  width: 150px;
 }
 
 .offcanvas__wrapper {
@@ -1848,7 +1848,7 @@ span {
   font-size: 16px;
   display: block;
   background: transparent;
-  color: var(--text);
+  color: var(--theme);
   border-radius: 50%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -3023,7 +3023,7 @@ span {
 .mean-container .mean-nav ul li a {
   width: 100%;
   padding: 10px 0;
-  color: var(--white);
+  color: #000;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -3814,6 +3814,11 @@ input.main-search-input::placeholder {
   visibility: hidden;
 }
 
+@media (max-width: 575px) {
+  .mouse-cursor {
+    display: none;
+  }
+}
 .cursor-inner {
   width: 6px;
   height: 6px;
@@ -3858,7 +3863,7 @@ input.main-search-input::placeholder {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  color: var(--header);
+  color: var(--text);
   font-size: 18px;
   position: fixed;
   display: inline-block;
@@ -4379,7 +4384,7 @@ input.main-search-input::placeholder {
   display: inline-block;
 }
 .service-box-items .content .service-btn:hover .arrow-icon, .service-box-items .content .service-btn:hover .link-btn {
-  color: var(--theme);
+  color: var(--white);
 }
 .service-box-items.border-none {
   border-right: none;
@@ -4401,6 +4406,7 @@ input.main-search-input::placeholder {
 }
 .service-box-items:hover {
   border-right: 1px solid var(--theme);
+  color: var(--white);
 }
 .service-box-items:hover::before {
   transform: scale(1, 1);
@@ -4931,7 +4937,7 @@ input.main-search-input::placeholder {
     margin-top: 30px;
   }
 .logo img{
-  width: 100px;
+  width: 150px;
   /* height: auto; */
 }
 }/*# sourceMappingURL=main.css.map */
