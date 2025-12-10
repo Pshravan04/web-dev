@@ -3952,6 +3952,37 @@ input.main-search-input::placeholder {
   color: var(--header);
 }
 
+.industries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.industry-card{
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.industry-card p{
+  text-align: left;
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 768px){
+  .industry-card{
+    flex-direction: column;
+    text-align: center;
+  }
+  .industry-card p{
+    margin: 20px 0px;
+    width: 100%;
+    }
+}
+
 .portfolio-box-items {
   margin-top: 50px;
   display: flex;
@@ -3968,15 +3999,21 @@ input.main-search-input::placeholder {
   }
 }
 .portfolio-box-items .project-wrap {
-  display: flex;
-  align-items: center;
-  gap: 80px;
+  display: grid;
+    grid-template-columns: 1fr;
+  padding: 50px;
+  width: 100%;
+  border: 2px solid red;
+}
+.project-description{
+  border: 2px solid red;
 }
 @media (max-width: 991px) {
   .portfolio-box-items .project-wrap {
     flex-wrap: wrap;
     gap: 30px;
   }
+  
 }
 .portfolio-box-items .content {
   padding-right: 80px;
@@ -4279,18 +4316,21 @@ input.main-search-input::placeholder {
 .section-title {
   position: relative;
   z-index: 99;
+  
+  text-align: center;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .section-title {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 .section-title h6 {
   color: var(--text);
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 25px;
   position: relative;
   line-height: 1;
   margin-bottom: 15px;
