@@ -4556,7 +4556,7 @@ input.main-search-input::placeholder {
   right: 40px;
 }
 .service-box-items-2:hover .content .service-btn .arrow-icon, .service-box-items-2:hover .content .service-btn .link-btn {
-  color: var(--theme);
+  color: var(--white);
 }
 
 .service-details-wrapper .details-content h2 {
