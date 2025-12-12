@@ -1,646 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="wordpressriver">
-        <meta name="description" content="Beyond The Click | Web Development Website">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <style>
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Numans&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbit&family=Orbitron:wght@400..900&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
-</style>
-<!-- Font Awesome 6 CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wordpressriver">
+    <meta name="description" content="Beyond The Click | Web Development Website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+        integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Numans&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbit&family=Orbitron:wght@400..900&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-        <!-- ======== Page title ============ -->
-        <title>BTC | Web Dev</title>
-        <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/logo/apple-touch-icon-114x114.png" type="image/x-icon">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Color.css >>-->
-        <link rel="stylesheet" href="assets/css/color.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-    </head>
-    <body class="body-bg">
+    <!-- ======== Page title ============ -->
+    <title>BTC | Web Dev</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/logo/apple-touch-icon-114x114.png" type="image/x-icon">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-        <!-- Preloader Start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">                
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="Beyond" class="letters-loading">
-                        Beyond                    </span>
-                    <span data-text-preloader="The" class="letters-loading">
-                        The
-                    </span>
-                    <span data-text-preloader="Click" class="letters-loading">
-                        Click
-                    </span>
-                </div>
-                <p class="text-center">Loading</p>
+<body class="body-bg">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
             </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
+            <div class="txt-loading">
+                <span data-text-preloader="Beyond" class="letters-loading">
+                    Beyond </span>
+                <span data-text-preloader="The" class="letters-loading">
+                    The
+                </span>
+                <span data-text-preloader="Click" class="letters-loading">
+                    Click
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
-        <!-- Back To Top start -->
-        <button id="back-top" class="back-to-top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
+    <!-- Back To Top start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        <!-- Offcanvas Area Start -->
-        <div class="fix-area">
-            <div class="offcanvas__info">
-                <div class="offcanvas__wrapper">
-                    <div class="offcanvas__content">
-                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__logo">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/btc-name-logo.png" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="offcanvas__close">
-                                <button>
-                                <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <p class="text d-none d-xl-block">
-                            With over 14 years in the industry, Beyond The Click stands at the intersection of design, development, and digital innovation. We create websites engineered for performance, crafted for brand identity, and built to convert — because every click matters.
-                        </p>
-                        <div class="mobile-menu fix mb-3"></div>
-                        <div class="offcanvas__contact">
-                            <h4>Contact Info</h4>
-                            <ul>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon">
-                                        <i class="fa-solid fa-map-location-dot"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">North Lanes, Vasai West</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-regular fa-message"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@beyondtheclick.in"><span class="mailto:info@beyondtheclick.in">info@beyondtheclick.in</span></a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-solid fa-clock-rotate-left"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 11am -05pm</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+91 8108234077">+91 8108234077</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="header-button mt-4">
-                                <a href="#contact" class="theme-btn text-center">
-                                    Get A Quote
-                                </a>
-                            </div>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a >
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="offcanvas__overlay"></div>
-
-        <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="logo">
-                            <a href="index.html" class="header-logo">
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
                                 <img src="assets/img/logo/btc-name-logo.png" alt="logo-img">
                             </a>
                         </div>
-                        <div class="mean__menu-wrapper">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html" style="color: #000;">
-                                                Home 
-                                            </a>
-                                        </li>
-                                        
-                                        <li>
-                                            <a href="#about">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#services">Services</a>
-                                        </li>
-                                      <li>
-                                            <a href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="header-button">
-                               <a href="#contact" class="theme-btn">Get In Touch</a>
-                            </div>
-                            <div class="header__hamburger d-xl-block my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-solid fa-bars-staggered"></i>
-                                </div>
-                            </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Search Area Start -->
-        <div class="search-wrap">
-            <div class="search-inner">
-                <i class="fas fa-times search-close" id="search-close"></i>
-                <div class="search-cell">
-                    <form method="get">
-                        <div class="search-field-holder">
-                            <input type="search" class="main-search-input" placeholder="Search...">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Hero Section Start -->
-        <section class="hero-section hero-1 section-padding">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="wow fadeInUp" data-wow-delay=".3s">
-                        Creative <span>Solutions</span> for the <br>    
-                        <img src="assets/img/hero/client-img.png" alt="img"> Modern World
-                    </h1>
-                    <p class="wow fadeInUp" data-wow-delay=".3s">We build scalable, secure, and high-performing digital solutions that help brands grow faster in the digital era. </p>
-                    <div class="row">
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="hero-image">
-                                <img src="assets/img/hero/01.jpg" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-counter float-bob-y ">
-                    <div class="counter-items">
-                        <h2><span class="count">14</span>+</h2>
-                        <p>YEAR EXPERIENCE</p>
-                    </div>
-                    <div class="counter-items">
-                        <h2><span class="count">95</span>%</h2>
-                        <p>HAPPY CUSTOMER</p>
-                    </div>
-                    <div class="counter-items">
-                        <h2><span class="count">100</span></h2>
-                        <p>PROJECTS COMPLETED</p>
-                    </div>
-                </div>
-                <div class="circle-item">
-                    <div class="circle-text">
-                        <img src="assets/img/hero/circle-text.png" alt="img">
-                    </div>
-                    <div class="border-line">
-                        <a href="about.html" class="arrow-icon">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Brand Section Start -->
-        <div class="brand-section section-padding fix pt-0">
-            <div class="container">
-                <div class="brand-text">
-                    <h5>Technologies we use</h5>
-                </div>
-                <div class="swiper brand-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/html-5.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/css-3.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/js.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/figma.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/wordpress.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/social.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- About Section Start -->
-        <section class="about-section fix section-padding section-bg" id="about"> 
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">About Us</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">We blend strategy, design, and technology  <span>to help brands grow, <br> connect, and lead </span>  in today’s fast-moving digital world.</h2>
-                    </div>
-                    <p class="wow fadeInUp" data-wow-delay=".5s">
-                        At the intersection of vision and execution, <br> we transform ideas into meaningful <br> digital experiences that deliver real impact.
+                    <p class="text d-none d-xl-block">
+                        With over 14 years in the industry, Beyond The Click stands at the intersection of design,
+                        development, and digital innovation. We create websites engineered for performance, crafted for
+                        brand identity, and built to convert — because every click matters.
                     </p>
-                </div>
-                <div class="about-wrapper">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-7">
-                            <div class="about-image-items">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="support-content">
-                                            <h3>24/7 Support</h3>
-                                            <div class="text-area">
-                                                <p>Reliable assistance whenever you need us—before, during, <br>  and after project delivery.</p>
-                                                <a href="#contact" class="icon">
-                                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="about-image">
-                                            <img src="assets/img/about/01.jpg" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="about-image-2">
-                                            <div class="about-image style-2">
-                                                <img src="assets/img/about/02.png" alt="img">
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fa-solid fa-map-location-dot"></i>
                                 </div>
-                            </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">North Lanes, Vasai West</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-regular fa-message"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@beyondtheclick.in"><span
+                                            class="mailto:info@beyondtheclick.in">info@beyondtheclick.in</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 11am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+91 8108234077">+91 8108234077</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="#contact" class="theme-btn text-center">
+                                Get A Quote
+                            </a>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="about-content">
-                                <div class="about-icon-items wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-dollar-sign"></i>
-                                        <div class="line-bar">
-                                            <img src="assets/img/about/line.png" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3>Our Mission</h3>
-                                        <p>
-                                            To empower businesses through smart digital strategies, strong design, and high-performance development that drives success.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="about-icon-items wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-bullseye"></i>
-                                        <div class="line-bar">
-                                            <img src="assets/img/about/line.png" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3>Our Vision</h3>
-                                        <p>
-                                            To become a trusted digital partner for brands worldwide by delivering powerful, future-ready creative and tech solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="about-icon-items wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-brain"></i>
-                                        <div class="line-bar">
-                                            <img src="assets/img/about/line.png" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3>What Sets Us Apart</h3>
-                                        <p>
-                                            We combine creativity, strategy, and technology to create solutions that are innovative, impactful, and growth-focused.
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="#contact" class="theme-btn wow fadeInUp" data-wow-delay=".5s">More About Us</a>
-                            </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Service Section Start -->
-        <section class="service-section fix section-padding" id="services">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Our Services</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Palette of <span>Expertise</span></h2>
-                    </div>
-                    <a href="service.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">See All Services</a>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="service-box-items">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Website Development</h3>
-                                <p>
-                                    We build fast, responsive, and scalable websites designed to deliver seamless user experience and strong business performance.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="#contact" class="link-btn">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="service-box-items">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>WordPress Development</h3>
-                                <p>
-                                    Custom WordPress solutions built for speed, security, flexibility, and simple content management for growing businesses.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="#contact" class="link-btn">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="service-box-items">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>UI/UX and Custom Design</h3>
-                                <p>
-We design intuitive, user-focused interfaces that enhance engagement, improve usability, and drive higher conversion rates
-                                </p>
-                                <div class="service-btn">
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="#contact" class="link-btn">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="service-box-items border-none">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Shopify Development</h3>
-                                <p>
-                                    Powerful Shopify stores built for smooth shopping experiences, secure payments, and scalable eCommerce business growth.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="#contact" class="link-btn">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                <!-- Team Section Start -->
-        <section class="team-section fix section-padding" id="team">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">Why Choose Us</h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Meet The <span>Team</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/01.jpg" alt="img">
-                            </div>
-                            <div class="team-content">
-                                <h3>Fast Project Delivery</h3><br>
-                                <p>Streamlined workflows ensure fast delivery without compromising quality or performance at scale.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/02.jpg" alt="img">
-                            </div>
-                            <div class="team-content">
-                                <h3>SEO-Optimized Development</h3><br>
-                                <p>Every website is built with clean code, fast loading, and SEO-friendly structure for better Google rankings.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/03.jpg" alt="img">
-                            </div>
-                            <div class="team-content">
-                                <h3>Scalable & Secure Solutions</h3><br>
-                                <p>Our websites are designed to grow with your business while maintaining top-level security and stability.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/04.jpg" alt="img">
-                            </div>
-                            <div class="team-content">
-                                <h3>Result-Driven Strategy</h3><br>
-                                <p>We focus on measurable results—higher traffic, better engagement, and increased conversions for your business.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Portfolio Section Start -->
-        <section class="portfolio-section fix section-bg section-padding" id="projects">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="">
-                        <h6 class="wow fadeInUp">Industries We Serve</h6>
-                        <!-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Some recent <span>work</span></h2> -->
-                    </div>
-                </div>
-                <div class="industries">
-        <div class="industry-card">
-            <h3>Real Estate</h3>
-            <p>We build high-conversion property websites, project landing pages,<br> and lead-generation platforms tailored for real estate businesses.</p>
-        </div>
-        <div class="industry-card">
-            <h3>Healthcare</h3>
-            <p>Secure, user-friendly websites for clinics, hospitals, and <br> doctors with appointment systems and patient-focused design.</p>
-        </div>
-        <div class="industry-card">
-            <h3>Retail Stores</h3>
-            <p>Modern eCommerce and business websites for retail brands <br> designed to boost online visibility and sales performance.</p>
-        </div>
-        <div class="industry-card">
-            <h3>Automobiles</h3>
-            <p>Performance-driven websites for car showrooms, dealers, <br> and service brands focused on inquiries, bookings, and visibility.</p>
         </div>
     </div>
-            </div>
-        </section>
+    <div class="offcanvas__overlay"></div>
 
+    <!-- Header Section Start -->
+    <header id="header-sticky" class="header-1">
+        <div class="container">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/btc-name-logo.png" alt="logo-img">
+                        </a>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="has-dropdown active menu-thumb">
+                                        <a href="index.html" style="color: #000;">
+                                            Home
+                                        </a>
+                                    </li>
 
-        
-
-        <!-- News Section Start -->
-        <section class="news-section fix section-padding" id="blog">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">How We Help Each Industry </h6>
-                        <!-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest News & <span>Blog</span></h2> -->
+                                    <li>
+                                        <a href="#about">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#services">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <div class="header-button">
+                            <a href="#contact" class="theme-btn">Get In Touch</a>
+                        </div>
+                        <div class="header__hamburger d-xl-block my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-1 section-padding">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                    Creative <span>Solutions</span> for the <br>
+                    <img src="assets/img/hero/client-img.png" alt="img"> Modern World
+                </h1>
+                <p class="wow fadeInUp" data-wow-delay=".3s">We build scalable, secure, and high-performing digital
+                    solutions that help brands grow faster in the digital era. </p>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/01.jpg" alt="img">
-                                <img src="assets/img/news/01.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="#contact">Real Estate Growth Solutions
-Lead-focused property websites, landing pages, and campaign websites.</a></h3>
-                                <div class="news-btn">
-                                    <a href="#contact" class="link-btn">Know More Details</a>
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="hero-image">
+                            <img src="assets/img/hero/01.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-counter float-bob-y ">
+                <div class="counter-items">
+                    <h2><span class="count">14</span>+</h2>
+                    <p>YEAR EXPERIENCE</p>
+                </div>
+                <div class="counter-items">
+                    <h2><span class="count">95</span>%</h2>
+                    <p>HAPPY CUSTOMER</p>
+                </div>
+                <div class="counter-items">
+                    <h2><span class="count">100</span></h2>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+            </div>
+            <div class="circle-item">
+                <div class="circle-text">
+                    <img src="assets/img/hero/circle-text.png" alt="img">
+                </div>
+                <div class="border-line">
+                    <a href="about.html" class="arrow-icon">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Section Start -->
+    <div class="brand-section section-padding fix pt-0">
+        <div class="container">
+            <div class="brand-text">
+                <h5>Technologies we use</h5>
+            </div>
+            <div class="swiper brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/html-5.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/css-3.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/js.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/figma.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/wordpress.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image text-center">
+                            <img src="assets/img/brand/social.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section Start -->
+    <section class="about-section fix section-padding section-bg" id="about">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <h6 class="wow fadeInUp">About Us</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">We blend strategy, design, and technology <span>to
+                            help brands grow, <br> connect, and lead </span> in today’s fast-moving digital world.</h2>
+                </div>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                    At the intersection of vision and execution, <br> we transform ideas into meaningful <br> digital
+                    experiences that deliver real impact.
+                </p>
+            </div>
+            <div class="about-wrapper">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-7">
+                        <div class="about-image-items">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="support-content">
+                                        <h3>24/7 Support</h3>
+                                        <div class="text-area">
+                                            <p>Reliable assistance whenever you need us—before, during, <br> and after
+                                                project delivery.</p>
+                                            <a href="#contact" class="icon">
+                                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="about-image">
+                                        <img src="assets/img/about/01.jpg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="about-image-2">
+                                        <div class="about-image style-2">
+                                            <img src="assets/img/about/02.png" alt="img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/02.jpg" alt="img">
-                                <img src="assets/img/news/02.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="#contact">Healthcare Digital Presence
-Appointment-ready, secure, and patient-friendly websites.</a></h3>
-                                <div class="news-btn">
-                                    <a href="#contact" class="link-btn">Know More Details</a>
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                    <div class="col-lg-5">
+                        <div class="about-content">
+                            <div class="about-icon-items wow fadeInUp" data-wow-delay=".3s">
+                                <div class="icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                    <div class="line-bar">
+                                        <img src="assets/img/about/line.png" alt="img">
+                                    </div>
                                 </div>
+                                <div class="content">
+                                    <h3>Our Mission</h3>
+                                    <p>
+                                        To empower businesses through smart digital strategies, strong design, and
+                                        high-performance development that drives success.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-icon-items wow fadeInUp" data-wow-delay=".5s">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                    <div class="line-bar">
+                                        <img src="assets/img/about/line.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>Our Vision</h3>
+                                    <p>
+                                        To become a trusted digital partner for brands worldwide by delivering powerful,
+                                        future-ready creative and tech solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-icon-items wow fadeInUp" data-wow-delay=".3s">
+                                <div class="icon">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <div class="line-bar">
+                                        <img src="assets/img/about/line.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>What Sets Us Apart</h3>
+                                    <p>
+                                        We combine creativity, strategy, and technology to create solutions that are
+                                        innovative, impactful, and growth-focused.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#contact" class="theme-btn wow fadeInUp" data-wow-delay=".5s">More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section Start -->
+    <section class="service-section fix section-padding" id="services">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <h6 class="wow fadeInUp">Our Services</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Palette of <span>Expertise</span></h2>
+                </div>
+                <a href="service.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">See All Services</a>
+            </div>
+            <div class="row g-0">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="service-box-items">
+                        <div class="icon">
+                            <img src="assets/img/service/app-development.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Website Development</h3>
+                            <p>
+                                We build fast, responsive, and scalable websites designed to deliver seamless user
+                                experience and strong business performance.
+                            </p>
+                            <div class="service-btn">
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                                <a href="#contact" class="link-btn">Know more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/03.jpg" alt="img">
-                                <img src="assets/img/news/03.jpg" alt="img">
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="service-box-items">
+                        <div class="icon">
+                            <img src="assets/img/service/wordpress.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>WordPress Development</h3>
+                            <p>
+                                Custom WordPress solutions built for speed, security, flexibility, and simple content
+                                management for growing businesses.
+                            </p>
+                            <div class="service-btn">
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                                <a href="#contact" class="link-btn">Know more</a>
                             </div>
-                            <div class="news-content">
-                                <h3><a href="#contact"> Retail & Automobiles Online Growth
-High-speed business websites and eCommerce platforms.</a></h3>
-                                <div class="news-btn">
-                                    <a href="#contact" class="link-btn">Know More Details</a>
-                                    <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="service-box-items">
+                        <div class="icon">
+                            <img src="assets/img/service/figma.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>UI/UX and Custom Design</h3>
+                            <p>
+                                We design intuitive, user-focused interfaces that enhance engagement, improve usability,
+                                and drive higher conversion rates
+                            </p>
+                            <div class="service-btn">
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                                <a href="#contact" class="link-btn">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="service-box-items border-none">
+                        <div class="icon">
+                            <img src="assets/img/service/shopify.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Shopify Development</h3>
+                            <p>
+                                Powerful Shopify stores built for smooth shopping experiences, secure payments, and
+                                scalable eCommerce business growth.
+                            </p>
+                            <div class="service-btn">
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                                <a href="#contact" class="link-btn">Know more</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Lets Talk Section Start -->
-        <section class="lets-talk-section fix section-padding section-bg pb-0">
-            <div class="container" id="contact">
-                <div class="marquee-section fix">
+    <!-- Team Section Start -->
+    <section class="team-section fix section-padding" id="team">
+        <div class="container">
+            <div class="section-title text-center">
+                <h6 class="wow fadeInUp">Why Choose Us</h6>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Meet The <span>Team</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="team-box-items">
+                        <div class="team-image">
+                            <img src="assets/img/team/01.jpg" alt="img">
+                        </div>
+                        <div class="team-content">
+                            <h3>Fast Project Delivery</h3><br>
+                            <p>Streamlined workflows ensure fast delivery without compromising quality or performance at
+                                scale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="team-box-items">
+                        <div class="team-image">
+                            <img src="assets/img/team/02.jpg" alt="img">
+                        </div>
+                        <div class="team-content">
+                            <h3>SEO-Optimized Development</h3><br>
+                            <p>Every website is built with clean code, fast loading, and SEO-friendly structure for
+                                better Google rankings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="team-box-items">
+                        <div class="team-image">
+                            <img src="assets/img/team/03.jpg" alt="img">
+                        </div>
+                        <div class="team-content">
+                            <h3>Scalable & Secure Solutions</h3><br>
+                            <p>Our websites are designed to grow with your business while maintaining top-level security
+                                and stability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="team-box-items">
+                        <div class="team-image">
+                            <img src="assets/img/team/04.jpg" alt="img">
+                        </div>
+                        <div class="team-content">
+                            <h3>Result-Driven Strategy</h3><br>
+                            <p>We focus on measurable results—higher traffic, better engagement, and increased
+                                conversions for your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section Start -->
+    <section class="portfolio-section fix section-bg section-padding" id="projects">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="">
+                    <h6 class="wow fadeInUp">Industries We Serve</h6>
+                    <!-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Some recent <span>work</span></h2> -->
+                </div>
+            </div>
+            <div class="industries">
+      <div class="industry-card">
+        <div class="icon"><img src="./assets/img/industries/estate.png" alt=""></div>
+        <div class="description">
+          <h3>Real Estate</h3>
+          <p>
+            We build high-conversion property websites, project landing pages,
+            and lead-generation platforms tailored for real estate businesses.
+          </p>
+        </div>
+        <div class="more-details">
+          <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="industry-card">
+        <div class="icon"><img src="./assets/img/industries/helthcare.png" alt=""></div>
+        <div class="description">
+          <h3>Healthcare</h3>
+          <p>
+            Secure, user-friendly websites for clinics, hospitals, and doctors
+            with appointment systems and patient-focused design.
+          </p>
+        </div>
+        <div class="more-details">
+          <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="industry-card">
+        <div class="icon"><img src="./assets/img/industries/retail-stores.png" alt=""></div>
+        <div class="description">
+          <h3>Retail Stores</h3>
+          <p>
+            Modern eCommerce and business websites for retail brands designed to
+            boost online visibility and sales performance.
+          </p>
+        </div>
+        <div class="more-details">
+          <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="industry-card">
+        <div class="icon"><img src="./assets/img/industries/automobile.png" alt=""></div>
+        <div class="description">
+          <h3>Automobiles</h3>
+          <p>
+            Performance-driven websites for car showrooms, dealers, and service
+            brands focused on inquiries, bookings, and visibility.
+          </p>
+        </div>
+        <div class="more-details">
+          <button>Know More<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- News Section Start -->
+    <section class="news-section fix section-padding" id="blog">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <h6 class="wow fadeInUp">How We Help Each Industry </h6>
+                    <!-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest News & <span>Blog</span></h2> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="news-box-items">
+                        <div class="news-image">
+                            <img src="assets/img/news/01.jpg" alt="img">
+                            <img src="assets/img/news/01.jpg" alt="img">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#contact">Real Estate Growth Solutions
+                                    Lead-focused property websites, landing pages, and campaign websites.</a></h3>
+                            <div class="news-btn">
+                                <a href="#contact" class="link-btn">Know More Details</a>
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="news-box-items">
+                        <div class="news-image">
+                            <img src="assets/img/news/02.jpg" alt="img">
+                            <img src="assets/img/news/02.jpg" alt="img">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#contact">Healthcare Digital Presence
+                                    Appointment-ready, secure, and patient-friendly websites.</a></h3>
+                            <div class="news-btn">
+                                <a href="#contact" class="link-btn">Know More Details</a>
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="news-box-items">
+                        <div class="news-image">
+                            <img src="assets/img/news/03.jpg" alt="img">
+                            <img src="assets/img/news/03.jpg" alt="img">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#contact"> Retail & Automobiles Online Growth
+                                    High-speed business websites and eCommerce platforms.</a></h3>
+                            <div class="news-btn">
+                                <a href="#contact" class="link-btn">Know More Details</a>
+                                <a href="#contact" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lets Talk Section Start -->
+    <section class="lets-talk-section fix section-padding section-bg pb-0">
+        <div class="container" id="contact">
+            <div class="marquee-section fix">
                 <div class="mycustom-marque">
                     <div class="scrolling-wrap">
                         <div class="comm">
@@ -662,17 +720,18 @@ High-speed business websites and eCommerce platforms.</a></h3>
                 </div>
             </div>
         </div>
-     <section class="contact-section fix section-padding pt-0">
+        <section class="contact-section fix section-padding pt-0">
             <div class="container">
                 <div class="contact-wrapper">
                     <div class="row">
-                        
+
                         <div class="">
                             <div class="contact-content d-flex align-items-center h-100">
-                               <div class="section-title text-center">
+                                <div class="section-title text-center">
                                     <h2 class="wow fadeInUp" data-wow-delay=".3s">Get in touch</h2>
-                               </div>
-                                <form action="contact.php" id="contact-form" method="POST" class="contact-form-items mt-3 mt-md-0">
+                                </div>
+                                <form action="contact.php" id="contact-form" method="POST"
+                                    class="contact-form-items mt-3 mt-md-0">
                                     <div class="row g-4">
                                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                             <div class="form-clt">
@@ -689,12 +748,13 @@ High-speed business websites and eCommerce platforms.</a></h3>
                                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                             <div class="form-clt">
                                                 <span>Write Message*</span>
-                                                <textarea name="message" id="message" placeholder="Write Message"></textarea>
+                                                <textarea name="message" id="message"
+                                                    placeholder="Write Message"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
                                             <button type="submit" class="theme-btn">
-                                                Send Message 
+                                                Send Message
                                             </button>
                                         </div>
                                     </div>
@@ -720,9 +780,10 @@ High-speed business websites and eCommerce platforms.</a></h3>
                                 </div>
                                 <div class="footer-content">
                                     <p>
-                                        © 2025 Beyond The Click — All Rights Reserved Designed <br> with passion,  Let's create something <br> amazing together.
+                                        © 2025 Beyond The Click — All Rights Reserved Designed <br> with passion, Let's
+                                        create something <br> amazing together.
                                     </p>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -733,22 +794,22 @@ High-speed business websites and eCommerce platforms.</a></h3>
                                 </div>
                                 <ul class="list-items">
                                     <li>
-                                        <a href="about.html"> 
+                                        <a href="about.html">
                                             About Us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="service.html"> 
+                                        <a href="service.html">
                                             Our Services
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="news.html"> 
+                                        <a href="news.html">
                                             Our Blog
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html"> 
+                                        <a href="contact.html">
                                             Contact Us
                                         </a>
                                     </li>
@@ -777,13 +838,15 @@ High-speed business websites and eCommerce platforms.</a></h3>
                                 </div>
                                 <div class="footer-content">
                                     <div class="footer-input" id="footer-socials">
-                                        <a href="https://www.instagram.com/beyondtheclick_official/"><img src="assets/img/icon/instagram.png" alt="instagram"></a>
-                                        <a href="https://www.facebook.com/p/Beyond-The-Click-100063880040382/"><img src="assets/img/icon/facebook.png" alt="facebook"></a>
+                                        <a href="https://www.instagram.com/beyondtheclick_official/"><img
+                                                src="assets/img/icon/instagram.png" alt="instagram"></a>
+                                        <a href="https://www.facebook.com/p/Beyond-The-Click-100063880040382/"><img
+                                                src="assets/img/icon/facebook.png" alt="facebook"></a>
                                     </div>
                                     <div class="footer-input">
                                         <p>“Your brand deserves more than just a website —
-it deserves attention, emotion and return.” <br>
-— Founder, Beyond The Click</p>
+                                            it deserves attention, emotion and return.” <br>
+                                            — Founder, Beyond The Click</p>
                                     </div>
                                 </div>
                             </div>
@@ -793,7 +856,7 @@ it deserves attention, emotion and return.” <br>
                 <div class="footer-bottom">
                     <div class="footer-bottom-wrapper">
                         <p class="wow fadeInUp" data-wow-delay=".3s">Copyright @ 2025 | Beyond The Click</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -821,5 +884,6 @@ it deserves attention, emotion and return.” <br>
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>
