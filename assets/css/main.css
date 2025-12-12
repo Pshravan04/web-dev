@@ -297,7 +297,7 @@ span {
 .about-section .section-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: -50px;
 }
 
 .about-section .section-title h6 {
@@ -310,7 +310,7 @@ span {
   }
 
   .about-section .section-title h6 {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
 }
@@ -919,10 +919,9 @@ span {
 }
 
 .brand-text h5 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--theme);
-  padding-left: 110px;
 }
 
 .brand-section .brand-slider {
@@ -953,7 +952,10 @@ span {
   }
 
   .brand-text {
-    left: -10%;
+    /* left: -10%; */
+  }
+  .brand-text h5{
+    font-size: 5vw;
   }
 }
 
@@ -4690,12 +4692,14 @@ input.main-search-input::placeholder {
 @media (max-width: 768px) {
 
   #projects h6 {
-    font-size: 5vw;
+    font-size: 8vw;
     margin-bottom: 2vh;
   }
 
   .industry-card {
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
   }
 
   .industry-card .icon {
@@ -5000,6 +5004,9 @@ input.main-search-input::placeholder {
   margin-left: 20px;
   width: 100%;
 }
+.service-section .section-title h6{
+  font-size: 3vw;
+}
 
 @media (max-width: 1199px) {
   .section-padding {
@@ -5011,6 +5018,9 @@ input.main-search-input::placeholder {
   .service-section .section-title {
     text-align: center;
     margin-left: 0;
+  }
+  .service-section .section-title h6{
+    font-size: 8vw;
   }
 
   .section-padding {
