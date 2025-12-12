@@ -5997,6 +5997,7 @@ input.main-search-input::placeholder {
     .field-group {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       gap: 4px;
     }
     
@@ -6106,7 +6107,7 @@ input.main-search-input::placeholder {
       .contact-sidebar {
         border-right: none;
         padding: 10%;
-        height: 75vh;
+        height: 85vh;
         border-bottom: 1px solid #e2e8f0;
       }
       .brand{
@@ -6117,7 +6118,13 @@ input.main-search-input::placeholder {
       .brand-mark{
         margin-top: 5%;
       }
-      
+      .checkbox-grid {
+        display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .field-group .checkbox-group{
+        width: 100%;
+      }
       .contact-div {
         padding: 32px 24px 28px;
       }
