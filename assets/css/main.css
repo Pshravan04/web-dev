@@ -6105,7 +6105,17 @@ input.main-search-input::placeholder {
       
       .contact-sidebar {
         border-right: none;
+        padding: 10%;
+        height: 75vh;
         border-bottom: 1px solid #e2e8f0;
+      }
+      .brand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .brand-mark{
+        margin-top: 5%;
       }
       
       .contact-div {
