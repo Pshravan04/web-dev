@@ -1428,7 +1428,6 @@ span {
 
 .footer-widgets-wrapper .single-footer-widget .footer-content .social-icon a {
   width: 40px;
-  /* reduced size */
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -1461,8 +1460,8 @@ span {
 }
 
 .footer-widgets-wrapper .single-footer-widget .footer-content .contact-text h4 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 60px ;
+  font-weight: normal;
   font-family: "Kanit", sans-serif;
   text-transform: lowercase;
 }
@@ -1472,8 +1471,8 @@ span {
 }
 
 .footer-widgets-wrapper .single-footer-widget .footer-content .contact-text h5 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: normal;
   font-family: "Kanit", sans-serif;
   text-transform: lowercase;
 }
@@ -1543,6 +1542,10 @@ span {
 
 .footer-widgets-wrapper .single-footer-widget .list-items li:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.footer-contact-details{
+  font-size: 40px;
 }
 
 .footer-widgets-wrapper .single-footer-widget .list-items li a {
@@ -2075,7 +2078,7 @@ span {
 }
 
 .offcanvas__logo a img {
-  width: 150px;
+  width: 200px;
 }
 
 .offcanvas__wrapper {
